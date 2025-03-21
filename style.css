@@ -1,0 +1,47 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #222;
+    font-family: Arial, sans-serif;
+    color: white;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.container {
+    text-align: center;
+}
+
+video {
+    width: 300px;
+    border: 5px solid #fff;
+    border-radius: 10px;
+}
+
+button {
+    margin-top: 20px;
+    padding: 15px 30px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #ff4500;
+    color: white;
+    transition: background-color 0.3s;
+}
+
+button.play {
+    background-color: #ff4500; /* Naranja */
+}
+
+button.pause {
+    background-color: #008000; /* Verde */
+}

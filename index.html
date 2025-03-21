@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Walkman Player</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Walkman Player</h1>
+    
+    <div class="container">
+        <!-- Video del Walkman -->
+        <video id="walkmanVideo" loop>
+            <source src="video.mov" type="video/mp4">
+            Tu navegador no soporta videos.
+        </video>
+
+        <!-- Botón de Play/Pause -->
+        <button id="playPauseBtn" class="play"></button>
+
+        <!-- Sonido de clic al presionar el botón -->
+        <audio id="clickSound">
+            <source src="audio/Sonidocasette.wav" type="audio/wav">
+        </audio>
+
+        <!-- Canción que debe sonar -->
+        <audio id="music" loop>
+            <source src="audio/Casette_prueba3.mp3" type="audio/mp3">
+        </audio>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
