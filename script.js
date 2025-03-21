@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
     const playPauseBtn = document.getElementById("playPauseBtn");
-    const walkmanVideo = document.getElementById("walkmanVideo");
+    const boomBoxImage = document.getElementById("boomBoxImage");
     const clickSound = document.getElementById("clickSound");
     const music = document.getElementById("music");
 
@@ -11,12 +11,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
         if (isPlaying) {
             music.pause();
-            walkmanVideo.pause();
             playPauseBtn.classList.remove("pause");
             playPauseBtn.classList.add("play");
         } else {
             music.play();
-            walkmanVideo.play();
             playPauseBtn.classList.remove("play");
             playPauseBtn.classList.add("pause");
         }
